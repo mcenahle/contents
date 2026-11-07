@@ -38,6 +38,7 @@ export default defineThemeConfig({
       items: [
         { text: "示例", link: "/demo/README.md" },
         { text: "献血", link: "/donate-blood/README.md" },
+        { text: "年终总结", link: "/annual/README.md" },
       ],
     },
     {
@@ -64,6 +65,13 @@ export default defineThemeConfig({
       linkPrefix: "/donate-blood/",
       title: "献血",
       sidebar: ["/donate-blood/"],
+    },
+    {
+      type: "doc",
+      dir: "annual",
+      linkPrefix: "/annual/",
+      title: "年终总结",
+      sidebar: ["/annual/", "/annual/2025/", "/annual/2024/"],
     },
   ],
 });
