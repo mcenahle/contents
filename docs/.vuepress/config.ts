@@ -35,8 +35,15 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     llmstxt: {
-      locale: "/",
-      // ...其它配置
+      locale: "all",
+      llmsTxtTemplateGetter: {
+        description: (_, { currentLocale }) => {
+          return currentLocale === "/"
+            ? "一个受不了总是开新网站，重复造轮子的 developer 的文档、博客网站"
+            : "A documentation and blog site by a developer who is fed up with constantly launching new websites and reinventing the wheel.";
+        },
+        details: "",
+      },
     },
   }),
 });
