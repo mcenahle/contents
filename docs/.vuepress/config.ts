@@ -34,6 +34,10 @@ export default defineUserConfig({
   shouldPrefetch: false,
 
   theme: plumeTheme({
+    readAid: "left",
+    docsRepo: "mcenahle/contents",
+    docsDir: "docs",
+    docsBranch: "main",
     llmstxt: {
       locale: "all",
       llmsTxtTemplateGetter: {
