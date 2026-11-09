@@ -37,6 +37,7 @@ export default defineThemeConfig({
       text: "笔记",
       items: [
         { text: "示例", link: "/demo/README.md" },
+        { text: "博客网站", link: "/myblog/README.md" },
         { text: "献血", link: "/donate-blood/README.md" },
         { text: "年终总结", link: "/annual/README.md" },
       ],
@@ -72,6 +73,13 @@ export default defineThemeConfig({
       linkPrefix: "/annual/",
       title: "年终总结",
       sidebar: ["/annual/", "/annual/2025/", "/annual/2024/"],
+    },
+    {
+      type: "doc",
+      dir: "myblog",
+      linkPrefix: "/myblog/",
+      title: "博客网站",
+      sidebar: ["/myblog/", "/myblog/20261109/"],
     },
   ],
 });
